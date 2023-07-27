@@ -1,13 +1,226 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruit Burst</title>
+
+    <!-- Open sans font from google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="./images/favicon-16x16.png" type="image/x-icon">
+    <!-- tailwind and daisy -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .open-sans {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <footer>
-       
+        <section
+        class="carousel w-full  relative rounded-lg h-[300px] md:h-[610px] lg:h-[730px]">
+        <!--banner slider 1 -->
+        <div id="" class=" mx-[240px] carousel-item border border-black-700 hero relative w-full md:h-[600px]"
+            style="background-image: url('./images/banner1.png'); background-size: 100% 100%;">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="">
+                <div class="flex flex-col items-center space-y-7 lg:mb-20">
+                    <h2 class=" text-3xl md:text-7xl font-extrabold text-center text-white">Exotic tastes at
+                        your <br>
+                        doorstep
+                    </h2>
+                    <p class="text-sm md:text-xl font-medium text-white text-center">We supply highly quality
+                        organic
+                        products</p>
+                    <button
+                        class="btn bg-primary-bg hover:bg-white hover:text-primary-bg text-xs md:text-xl font-medium md:font-extrabold text-[#FFF] w-[150px] md:h-16  border-none">Shop
+                        Now</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4"
+                        class="btn btn-circle bg-black text-[white] border-none hover:bg-neutral-500 hover:text-black">❮</a>
+                    <a href="#slide2"
+                        class="btn btn-circle bg-black text-white border-none hover:bg-neutral-500 hover:text-black">❯</a>
+                </div>
+            </div>
+            <div
+                class="border hidden lg:flex mx-24 absolute transform -translate-y-1/2 left-5 right-5 lg:top-[600px] flex justify-around rounded-lg bg-white border-red-50">
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit1.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Graps</h3>
+                </div>
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit2.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Orange</h3>
+                </div>
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit3.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Mango</h3>
+                </div>
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit4.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Strawberry</h3>
+                </div>
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit5.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Pomegranate</h3>
+                </div>
+            </div>
+        </div>
+        <!--banner slider 2 -->
+        <div id="slide2" class="carousel-item border border-black-700 hero relative w-full md:h-[600px]"
+            style="background-image: url('./images/banner2.png'); background-size: 100% 100%;">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="">
+                <div class="flex flex-col items-center space-y-7 lg:mb-20">
+                    <h2 class=" text-3xl md:text-7xl font-extrabold text-center text-white">Exotic tastes at
+                        your <br>
+                        doorstep
+                    </h2>
+                    <p class="text-sm md:text-xl font-medium text-white text-center">We supply highly quality
+                        organic
+                        products</p>
+                    <button
+                        class="btn bg-primary-bg hover:bg-white hover:text-primary-bg text-xs md:text-xl font-medium md:font-extrabold text-[#FFF] w-[150px] md:h-16  border-none">Shop
+                        Now</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1"
+                        class="btn btn-circle bg-black text-white border-none hover:bg-neutral-500 hover:text-black">❮</a>
+                    <a href="#slide3"
+                        class="btn btn-circle bg-black text-white border-none hover:bg-neutral-500 hover:text-black">❯</a>
+                </div>
+            </div>
+            <div
+                class="border hidden lg:flex mx-24 absolute transform -translate-y-1/2 left-5 right-5 lg:top-[600px] flex justify-around rounded-lg bg-white border-red-50">
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit1.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Graps</h3>
+                </div>
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit2.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Orange</h3>
+                </div>
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit3.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Mango</h3>
+                </div>
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit4.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Strawberry</h3>
+                </div>
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit5.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Pomegranate</h3>
+                </div>
+
+            </div>
+        </div>
+        <!--banner slider 3 -->
+        <div id="slide3" class="carousel-item border border-black-700 hero relative w-full md:h-[600px]"
+            style="background-image: url('./images/banner3.png'); background-size: 100% 100%;">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="">
+                <div class="flex flex-col items-center space-y-7 lg:mb-20">
+                    <h2 class=" text-3xl md:text-7xl font-extrabold text-center text-white">Exotic tastes at
+                        your <br>
+                        doorstep
+                    </h2>
+                    <p class="text-sm md:text-xl font-medium text-white text-center">We supply highly quality
+                        organic
+                        products</p>
+                    <button
+                        class="btn bg-primary-bg hover:bg-white hover:text-primary-bg text-xs md:text-xl font-medium md:font-extrabold text-[#FFF] w-[150px] md:h-16  border-none">Shop
+                        Now</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2"
+                        class="btn btn-circle bg-black text-white border-none hover:bg-neutral-500 hover:text-black">❮</a>
+                    <a href="#slide4"
+                        class="btn btn-circle bg-black text-white border-none hover:bg-neutral-500 hover:text-black">❯</a>
+                </div>
+            </div>
+            <div
+                class="border hidden lg:flex mx-24 absolute transform -translate-y-1/2 left-5 right-5 lg:top-[600px] flex justify-around rounded-lg bg-white border-red-50">
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit1.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Graps</h3>
+                </div>
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit2.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Orange</h3>
+                </div>
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit3.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Mango</h3>
+                </div>
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit4.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Strawberry</h3>
+                </div>
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit5.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Pomegranate</h3>
+                </div>
+            </div>
+        </div>
+        <!--banner slider 4 -->
+        <div id="slide4" class="carousel-item border border-black-700 hero relative w-full md:h-[600px]"
+            style="background-image: url('./images/banner4.png'); background-size: 100% 100%;">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="">
+                <div class="flex flex-col items-center space-y-7 lg:mb-20">
+                    <h2 class=" text-3xl md:text-7xl font-extrabold text-center text-white">Exotic tastes at
+                        your <br>
+                        doorstep
+                    </h2>
+                    <p class="text-sm md:text-xl font-medium text-white text-center">We supply highly quality
+                        organic
+                        products</p>
+                    <button
+                        class="btn bg-primary-bg hover:bg-white hover:text-primary-bg text-xs md:text-xl font-medium md:font-extrabold text-[#FFF] w-[150px] md:h-16  border-none">Shop
+                        Now</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3"
+                        class="btn btn-circle bg-black text-white border-none hover:bg-neutral-500 hover:text-black">❮</a>
+                    <a href="#slide1"
+                        class="btn btn-circle bg-black text-white border-none hover:bg-neutral-500 hover:text-black">❯</a>
+                </div>
+            </div>
+            <div
+                class="border hidden lg:flex mx-24 absolute transform -translate-y-1/2 left-5 right-5 lg:top-[600px] flex justify-around rounded-lg bg-white border-red-50">
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit1.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Graps</h3>
+                </div>
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit2.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Orange</h3>
+                </div>
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit3.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Mango</h3>
+                </div>
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit4.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Strawberry</h3>
+                </div>
+                <div class="p-8 space-y-4 flex flex-col items-center">
+                    <img src="./images/fruit5.png" alt="fruit">
+                    <h3 class="text-title text-xl font-medium">Pomegranate</h3>
+                </div>
+            </div>
+        </div>
+    </section>
     </footer>
 </body>
 </html>
